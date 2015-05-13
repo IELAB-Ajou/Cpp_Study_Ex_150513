@@ -7,9 +7,17 @@
 //
 
 #include <iostream>
+#include "DrOh.h"
+#include "Student.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    DrOh cDroh;
+    Student cStudent;
+    
+    cDroh.Setup();
+    cStudent.Setup();
+    
+    cStudent.Conversation(cDroh, cDroh.TalkTo(kDOCTypeHI));
+    
     return 0;
 }
